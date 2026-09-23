@@ -28,7 +28,7 @@ The [`examples/our-methods/`](examples/our-methods/) directory contains a comple
 
 - Original source figure: [`source.png`](examples/our-methods/source.png)
 - Static original-versus-SVG comparison: [`comparison.png`](examples/our-methods/comparison.png)
-- Interactive original/SVG comparison: [`comparison.html`](examples/our-methods/comparison.html) (self-contained offline slider; download and open in a browser; the static PNG above is visible inline in repository viewers)
+- Interactive original/SVG comparison: [Open online](https://realuu.github.io/Png2Svg-skill/examples/our-methods/comparison.html) ([standalone HTML](examples/our-methods/comparison.html) for offline use)
 - Editable master: [`diagram_editable.svg`](examples/our-methods/diagram_editable.svg)
 - Font-independent outlined copy: [`diagram_outlined.svg`](examples/our-methods/diagram_outlined.svg)
 - Text and visual inventory: [`inventory.json`](examples/our-methods/inventory.json)
@@ -48,7 +48,3 @@ The generated SVGs are the reusable artifacts; use the editable master when labe
 - Reasoning depth: `Ultra`
 - Source: Fig. 2 in Zimeng Fan et al., “BatteryTSFM: Generalizable long-horizon degradation prediction across conditions and chemistries via time series foundation models,” *Energy and AI*, 22 (2025), 100646. [Article / DOI](https://doi.org/10.1016/j.egyai.2025.100646)
 - The article is identified as CC BY-NC-ND 4.0. This repository records the citation and reconstruction settings only; it does not redistribute the paper figure, comparison image, or reconstructed SVG. See the [license terms](https://creativecommons.org/licenses/by-nc-nd/4.0/).
-
-## Scope
-
-The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. User source images are not committed by default; this example includes its cited source figure solely to make the reconstruction comparison reproducible.
