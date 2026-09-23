@@ -1,0 +1,46 @@
+{
+  "file": "D:\\codex\\flowchart\\Png2Svg-skill\\examples\\our-methods\\diagram_outlined.svg",
+  "sha256": "d9fa101592fa02ab190557c81da5a79bd8a71052ddb951e521b382d08d9189aa",
+  "size_bytes": 154525,
+  "mode": "outlined",
+  "errors": [],
+  "warnings": [
+    "Manifest text evidence is structural only; labels may be hidden, occluded or outside the canvas"
+  ],
+  "visual_fidelity": "not_assessed",
+  "label_visibility": "not_assessed",
+  "inventory_checked": true,
+  "viewBox": [
+    0.0,
+    0.0,
+    1511.0,
+    877.0
+  ],
+  "intrinsic_size_px": [
+    1511.0,
+    877.0
+  ],
+  "element_counts": {
+    "circle": 53,
+    "defs": 1,
+    "ellipse": 2,
+    "g": 62,
+    "line": 98,
+    "marker": 1,
+    "path": 159,
+    "polygon": 6,
+    "rect": 94,
+    "svg": 1,
+    "title": 1,
+    "use": 535
+  },
+  "text_elements": 0,
+  "label_count": 56,
+  "font_families": [],
+  "duplicate_ids": [],
+  "unresolved_references": [],
+  "external_resources": [],
+  "visual_check_items": 9,
+  "visual_checks_note": "Recorded inventory only; this script does not verify visual checks",
+  "structural_pass": true
+}

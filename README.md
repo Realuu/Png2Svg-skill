@@ -18,6 +18,23 @@ To install manually, copy this folder into your Codex skills directory, usually 
 
 See [`references/verification.md`](references/verification.md) for examples and tool limitations. Automated checks do not certify visual fidelity; compare the actual render and source at full size and in enlarged crops.
 
+## Example reconstruction
+
+The [`examples/our-methods/`](examples/our-methods/) directory contains a complete reconstruction of a three-part time-series methods framework. It preserves the panel hierarchy, 56 text runs, colored curves, arrows, and the small analyzer/reasoner/executor icons as native SVG elements.
+
+![Our Method reconstruction preview](examples/our-methods/preview.png)
+
+- Editable master: [`diagram_editable.svg`](examples/our-methods/diagram_editable.svg)
+- Font-independent outlined copy: [`diagram_outlined.svg`](examples/our-methods/diagram_outlined.svg)
+- Text and visual inventory: [`inventory.json`](examples/our-methods/inventory.json)
+- Structural audit reports: [`editable_audit.json`](examples/our-methods/editable_audit.json) and [`outlined_audit.json`](examples/our-methods/outlined_audit.json)
+- Canvas: `1511 × 877`; embedded raster images: `0`
+- Skill used: `$png-to-svg-reconstruction`
+- Model: `GPT-5.6 Luna`
+- Reasoning depth: `Max`
+
+The source PNG is intentionally not committed. The generated SVGs are the reusable artifacts; the editable master is the version to use when labels or geometry need to be changed.
+
 ## Scope
 
-The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. This repository does not include user source images or generated figure files.
+The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. User source images are not committed; the repository may include self-contained generated examples under `examples/`.
