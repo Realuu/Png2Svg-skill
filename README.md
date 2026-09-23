@@ -24,6 +24,10 @@ The [`examples/our-methods/`](examples/our-methods/) directory contains a comple
 
 ![Our Method reconstruction preview](examples/our-methods/preview.png)
 
+![Original PNG versus reconstructed SVG](examples/our-methods/comparison.png)
+
+- Original source figure: [`source.png`](examples/our-methods/source.png)
+- Static original-versus-SVG comparison: [`comparison.png`](examples/our-methods/comparison.png)
 - Editable master: [`diagram_editable.svg`](examples/our-methods/diagram_editable.svg)
 - Font-independent outlined copy: [`diagram_outlined.svg`](examples/our-methods/diagram_outlined.svg)
 - Text and visual inventory: [`inventory.json`](examples/our-methods/inventory.json)
@@ -33,8 +37,10 @@ The [`examples/our-methods/`](examples/our-methods/) directory contains a comple
 - Model: `GPT-5.6 Luna`
 - Reasoning depth: `Max`
 
-The source PNG is intentionally not committed. The generated SVGs are the reusable artifacts; the editable master is the version to use when labels or geometry need to be changed.
+Source attribution: Weilin Ruan and Yuxuan Liang, “Visual Reasoning over Time Series via Multi-Agent System,” arXiv:2602.03026v1 (2026), Figure 1. See the [arXiv preprint](https://arxiv.org/abs/2602.03026) and the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). The SVG is an adapted, redrawn derivative; the original figure is included for comparison and attribution.
+
+The generated SVGs are the reusable artifacts; use the editable master when labels or geometry need to be changed.
 
 ## Scope
 
-The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. User source images are not committed; the repository may include self-contained generated examples under `examples/`.
+The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. User source images are not committed by default; this example includes its cited source figure solely to make the reconstruction comparison reproducible.
