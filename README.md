@@ -28,6 +28,7 @@ The [`examples/our-methods/`](examples/our-methods/) directory contains a comple
 
 - Original source figure: [`source.png`](examples/our-methods/source.png)
 - Static original-versus-SVG comparison: [`comparison.png`](examples/our-methods/comparison.png)
+- Interactive original/SVG comparison: [`comparison.html`](examples/our-methods/comparison.html) (self-contained offline slider; download and open in a browser; the static PNG above is visible inline in repository viewers)
 - Editable master: [`diagram_editable.svg`](examples/our-methods/diagram_editable.svg)
 - Font-independent outlined copy: [`diagram_outlined.svg`](examples/our-methods/diagram_outlined.svg)
 - Text and visual inventory: [`inventory.json`](examples/our-methods/inventory.json)
@@ -40,6 +41,13 @@ The [`examples/our-methods/`](examples/our-methods/) directory contains a comple
 Source attribution: Weilin Ruan and Yuxuan Liang, “Visual Reasoning over Time Series via Multi-Agent System,” arXiv:2602.03026v1 (2026), Figure 1. See the [arXiv preprint](https://arxiv.org/abs/2602.03026) and the [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/). The SVG is an adapted, redrawn derivative; the original figure is included for comparison and attribution.
 
 The generated SVGs are the reusable artifacts; use the editable master when labels or geometry need to be changed.
+
+## Additional case (reference only): BatteryTSFM
+
+- Model: `GPT-6 Astra`
+- Reasoning depth: `Ultra`
+- Source: Fig. 2 in Zimeng Fan et al., “BatteryTSFM: Generalizable long-horizon degradation prediction across conditions and chemistries via time series foundation models,” *Energy and AI*, 22 (2025), 100646. [Article / DOI](https://doi.org/10.1016/j.egyai.2025.100646)
+- The article is identified as CC BY-NC-ND 4.0. This repository records the citation and reconstruction settings only; it does not redistribute the paper figure, comparison image, or reconstructed SVG. See the [license terms](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ## Scope
 
