@@ -1,2 +1,23 @@
-# Png2Svg-skill
-一个将Png转化为Svg的codex技能
+# PNG to SVG Reconstruction
+
+A reusable Codex skill for rebuilding scientific diagrams, flowcharts, and technical schematics as faithful, editable SVGs.
+
+The workflow inventories the source figure, redraws it as vector elements, checks text and mathematical notation, calibrates curves and arrows, and compares the rendered result against the source. It keeps an editable SVG master and can also deliver an outlined-text copy for font-independent sharing.
+
+## Use in Codex
+
+Invoke the skill with `$png-to-svg-reconstruction` and attach a diagram. The skill instructions are in [`SKILL.md`](SKILL.md); detailed reconstruction and verification notes are linked from that file.
+
+To install manually, copy this folder into your Codex skills directory, usually `~/.codex/skills/png-to-svg-reconstruction` on macOS/Linux or `%USERPROFILE%\.codex\skills\png-to-svg-reconstruction` on Windows. Restart or refresh Codex if the skill list does not update.
+
+## Included tools
+
+- `scripts/audit_svg.py`: checks SVG structure, local references, external resources, optional text inventory, and editable/outlined mode. Requires Python 3.9 or newer; uses only the standard library.
+- `scripts/render_svg.cjs`: writes a PNG preview using an existing Node.js and Sharp installation. It does not install packages.
+- `scripts/make_comparison.py`: creates an offline source-PNG/SVG slider for visual review. The HTML contains both images, so it contains the source figure; the SVG itself remains independent.
+
+See [`references/verification.md`](references/verification.md) for examples and tool limitations. Automated checks do not certify visual fidelity; compare the actual render and source at full size and in enlarged crops.
+
+## Scope
+
+The skill focuses on diagrams where preserving labels, formulas, curves, arrows, and small symbols matters. It is not intended for photographs or wrapping a raster image inside an SVG. This repository does not include user source images or generated figure files.

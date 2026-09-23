@@ -1,0 +1,4 @@
+interface:
+  display_name: "PNG 转可编辑 SVG"
+  short_description: "高保真重绘论文框架图，保留文字、公式、曲线与细节，并核查纯矢量交付"
+  default_prompt: "使用 $png-to-svg-reconstruction 将这张 PNG 框架图重建为尽可能贴近原图的可编辑 SVG，保留所有内容，并交付文字转曲版和对照预览。"
